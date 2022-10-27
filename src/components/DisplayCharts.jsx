@@ -2,6 +2,7 @@ import {React, useState, useEffect} from "react";
 import Highchart, { chart } from 'highcharts';
 import HighchartsReact from "highcharts-react-official";
 import DownloadBar from "./DownloadBar";
+import {output} from '../data/Data.js'
 
 const DisplayCharts = () => {
 
@@ -12,12 +13,17 @@ const DisplayCharts = () => {
   
     const LoadData = async () => {
       try{
-        //Cargar datos de entrada. Acá puede un endpoint para conectarme a una API por ejemplo
-        let output = { 
-          cities:  ["México", "Monterrey", "Guadalajara", "Puebla", "Tijuana", "Toluca", "Ciudad Juarez"],
-          nServicios:  [9, 1, 4, 8, 5, 10, 7],
-          meta: [15, 10, 10, 8, 9, 10, 9],
-        }
+        //Cargar datos de entrada. 
+        //FORMA 1: Acá puede un endpoint para conectarme a una API.
+
+        //FORMA2: Incluirlos directamente acá
+        // let output = { 
+        //   cities:  ["México", "Monterrey", "Guadalajara", "Puebla", "Tijuana", "Toluca", "Ciudad Juarez"],
+        //   nServicios:  [9, 1, 4, 8, 5, 10, 7],
+        //   meta: [15, 10, 10, 8, 9, 10, 9],
+        // }
+
+        //FORMA3: Importarlos desde un archivo externo. (Reviar línea 5 import {output} from '../data/Data.js'
   
         const options = {
           chart: {
