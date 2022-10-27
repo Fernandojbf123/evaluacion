@@ -1,0 +1,40 @@
+.main-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .graph-container{
+    width: 100%;
+  }
+  
+  .selector-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.65em;
+    margin-top: 0.9em;
+  }
+  
+  @media (max-width: 500px){
+    .wrapper {
+      width: 90%;
+    }
+  
+    .selector-wrapper {
+      font-size: 0.6em;
+      margin-top: 0.9em;
+    }
+  }
+  

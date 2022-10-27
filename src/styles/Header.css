@@ -1,0 +1,22 @@
+#header{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(135deg, rgb(0, 50, 150) 0%, rgb(0, 153, 200) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+
+}
+
+
+@media (max-width: 500px){
+    #header{
+        padding: 10px;
+        font-size: .65em;
+    }
+}
