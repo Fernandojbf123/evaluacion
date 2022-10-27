@@ -7,8 +7,7 @@ const DownloadBar = () => {
   function handleFIG () {
     const input = document.getElementById("graph")
     html2canvas(input, {logging:true, letterRendering: 1, useCORS:true}).then(canvas=>{
-      const imgWidth = 208;
-      const imgHeight = canvas.height * imgWidth / canvas.width;
+      //se debe crear un nuevo elemento para renderizar la imagen.
       const a = document.createElement("a");
       a.href = canvas.toDataURL('img/png',1);
       a.download = "chart.png"
@@ -19,6 +18,7 @@ const DownloadBar = () => {
   function handlePDF () {
     const input = document.getElementById("graph")
     html2canvas(input, {logging:true, letterRendering: 1, useCORS:true}).then(canvas=>{
+      //se deben agregar las condiciones para que ajuste al tamaño de la hoja.
       const imgWidth = 208;
       const imgHeight = canvas.height * imgWidth / canvas.width;
       const imgData = canvas.toDataURL('img/png',1);
