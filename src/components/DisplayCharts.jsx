@@ -6,10 +6,10 @@ import {output} from '../data/Data.js'
 
 const DisplayCharts = () => {
 
-    const [isLoaded,setIsLoaded]          = useState(false);
+    const [isLoaded,setIsLoaded] = useState(false);
     const [selectedCity, setSelectedCity] = useState('');
-    const [data, setData]                 = useState({});
-    const [dataForGraph,setDataForGraph]  = useState({});
+    const [data, setData] = useState({});
+    const [dataForGraph,setDataForGraph] = useState({});
   
     const LoadData = async () => {
       try{
