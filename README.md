@@ -14,7 +14,7 @@ Se solicita que el programador realice un proyecto que realice lo siguiente:
   • NO se admiten consultas de ningún tipo para este examen.
   • Se aceptan documentos que permitan analizar de mejor forma la solución propuesta: UML, Levantamiento de requerimiento, etc.
   • El candidato tiene solo 72 horas a partir de recibirlo en su buzón para mandar la solución.
-# *********************************** SOLUCION *********************************
+# ******************** SOLUCION ******************
 Se crea una app en react utilizando vite en su última versión (fecha 27-oct-2022)
 Se instalan las dependencias:
  • "highcharts": "^10.2.1" (Para realizar el gráfico de barras)
