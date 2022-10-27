@@ -9,10 +9,10 @@ const DownloadBar = () => {
     html2canvas(input, {logging:true, letterRendering: 1, useCORS:true}).then(canvas=>{
       const imgWidth = 208;
       const imgHeight = canvas.height * imgWidth / canvas.width;
-      const imgData = canvas.toDataURL('img/png');
-      const pdf = new jsPDF('p','mm','a4');
-      pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
-      pdf.save("chart.jpg")
+      const a = document.createElement("a");
+      a.href = canvas.toDataURL('img/png',1);
+      a.download = "chart.png"
+      a.click();
     })
   }
 
@@ -21,7 +21,7 @@ const DownloadBar = () => {
     html2canvas(input, {logging:true, letterRendering: 1, useCORS:true}).then(canvas=>{
       const imgWidth = 208;
       const imgHeight = canvas.height * imgWidth / canvas.width;
-      const imgData = canvas.toDataURL('img/png');
+      const imgData = canvas.toDataURL('img/png',1);
       const pdf = new jsPDF('p','mm','a4');
       pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
       pdf.save("chart.pdf")
