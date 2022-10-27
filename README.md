@@ -27,8 +27,4 @@
 # Esta evaluación incluye responsive design (probado en diferentes dispositivos desde 280x653 hasta )
 # Built available in: https://singular-salmiakki-a5eab6.netlify.app/
 # Este ejercicio es una evaluación para puesto de trabajo en Day Store y es de caracter confidencial.
-<<<<<<< HEAD
 # Ejercicio realizado por Fernando Bello +52 646 197 90 27
-=======
-# Ejercicio realizado por Fernando Bello +52 646 197 90 27
->>>>>>> 4d7127d45bc24aa2fe5d994970591eea8dd5becb
